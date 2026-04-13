@@ -727,6 +727,16 @@
           <p><strong>Why:</strong> ${escapeHtml(county.why)}</p>
           ${county.notes.length ? `<p><strong>Notes:</strong></p><ul>${county.notes.map(n => `<li>${escapeHtml(n)}</li>`).join('')}</ul>` : ''}
         </div>
+        </div>
+
+        <div class="callout" style="margin-top:16px; background:#eef7ff;">
+          <h3>Suggested talk track</h3>
+          <p><strong>Explain the rule:</strong> Rabies recommendations are based on whether there was a realistic chance of contact with the animal.</p>
+          <p><strong>Apply it:</strong> Based on what you described, this does not meet the criteria for a rabies exposure.</p>
+          <p><strong>Reassure:</strong> This type of situation is considered very low risk.</p>
+          <p><strong>Give an option:</strong> If you still want the animal tested, that can be done privately at your expense.</p>
+        </div>
+
         <div class="foot">
           This summary contains no protected health information (PHI) and is intended for decision support only.<br>
           This prototype reflects the uploaded branching logic and should be validated against the current operational workflow before field use.
