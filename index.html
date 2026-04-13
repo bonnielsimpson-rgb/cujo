@@ -25,83 +25,73 @@
     }
 
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background: linear-gradient(180deg, #eaf4ff 0%, #f6fbff 100%);
       color: var(--text);
     }
-
     .wrap {
       max-width: 1100px;
       margin: 0 auto;
       padding: 24px;
     }
-
     .header {
-      background: rgba(255, 255, 255, 0.88);
+      background: rgba(255, 255, 255, 0.92);
       border: 1px solid var(--border);
       border-radius: 24px;
       box-shadow: var(--shadow);
       padding: 22px 24px;
       margin-bottom: 20px;
-      backdrop-filter: blur(8px);
     }
-
     h1 {
       margin: 0 0 8px;
       font-size: 30px;
       line-height: 1.15;
     }
-
     .sub {
       color: var(--sub);
       font-size: 15px;
       line-height: 1.5;
-      max-width: 900px;
+      max-width: 920px;
     }
-
     .grid {
       display: grid;
       grid-template-columns: 300px 1fr;
       gap: 20px;
       align-items: start;
     }
-
     .card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
     }
-
     .side {
       padding: 18px;
       position: sticky;
       top: 20px;
     }
-
-    .side h2,
-    .main h2 {
+    .main {
+      padding: 24px;
+      min-height: 520px;
+    }
+    .side h2, .main h2 {
       margin: 0 0 12px;
       font-size: 18px;
     }
-
     .history-list {
       display: flex;
       flex-direction: column;
       gap: 10px;
       margin-bottom: 18px;
     }
-
     .history-item {
       background: var(--panel);
       border: 1px solid var(--border);
       border-radius: 14px;
       padding: 10px 12px;
     }
-
     .history-q {
       font-size: 12px;
       color: var(--sub);
@@ -109,23 +99,15 @@
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
-
     .history-a {
       font-size: 14px;
       font-weight: 700;
     }
-
     .muted {
       color: var(--sub);
       font-size: 14px;
       line-height: 1.5;
     }
-
-    .main {
-      padding: 24px;
-      min-height: 520px;
-    }
-
     .progress {
       display: inline-block;
       padding: 7px 12px;
@@ -137,13 +119,11 @@
       font-weight: 700;
       margin-bottom: 14px;
     }
-
     .question {
       font-size: 29px;
       line-height: 1.2;
       margin: 0 0 10px;
     }
-
     .help {
       color: var(--sub);
       font-size: 15px;
@@ -151,14 +131,12 @@
       margin-bottom: 22px;
       max-width: 780px;
     }
-
     .answers {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 14px;
       margin-bottom: 22px;
     }
-
     button.answer,
     .toolbar button,
     .result-toolbar button,
@@ -168,7 +146,6 @@
       font: inherit;
       cursor: pointer;
     }
-
     button.answer {
       text-align: left;
       background: #fff;
@@ -179,7 +156,6 @@
       transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
       box-shadow: 0 4px 12px rgba(42, 77, 110, 0.05);
     }
-
     button.answer:hover,
     button.answer:focus-visible {
       border-color: var(--accent);
@@ -187,30 +163,23 @@
       box-shadow: 0 10px 20px rgba(42, 77, 110, 0.10);
       outline: none;
     }
-
     .answer-title {
       font-weight: 700;
       font-size: 17px;
       margin-bottom: 6px;
     }
-
     .answer-desc {
       color: var(--sub);
       font-size: 14px;
       line-height: 1.4;
     }
-
-    .toolbar,
-    .result-toolbar {
+    .toolbar, .result-toolbar {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       margin-top: 8px;
     }
-
-    .toolbar button,
-    .result-toolbar button,
-    .toggle-btn {
+    .toolbar button, .result-toolbar button, .toggle-btn {
       background: #eef6ff;
       border: 1px solid var(--border);
       color: var(--text);
@@ -218,24 +187,18 @@
       padding: 10px 14px;
       font-weight: 700;
     }
-
-    .toolbar button:hover,
-    .result-toolbar button:hover,
-    .toggle-btn:hover {
+    .toolbar button:hover, .result-toolbar button:hover, .toggle-btn:hover {
       background: #e3f0ff;
     }
-
     .result {
       border-radius: 22px;
       padding: 20px;
       border: 2px solid var(--border);
       margin-top: 10px;
     }
-
     .result.ok { background: var(--ok-bg); border-color: var(--ok-border); }
     .result.warn { background: var(--warn-bg); border-color: var(--warn-border); }
     .result.bad { background: var(--bad-bg); border-color: var(--bad-border); }
-
     .result-label {
       display: inline-block;
       padding: 7px 12px;
@@ -248,35 +211,29 @@
       letter-spacing: 0.06em;
       margin-bottom: 12px;
     }
-
     .result h3 {
       margin: 0 0 10px;
       font-size: 28px;
       line-height: 1.15;
     }
-
     .result p {
       margin: 0 0 12px;
       font-size: 15px;
       line-height: 1.55;
     }
-
     .result ul {
       margin: 10px 0 0 20px;
       padding: 0;
     }
-
     .result li {
       margin: 0 0 8px;
       line-height: 1.5;
     }
-
     .details {
       margin-top: 16px;
       padding-top: 16px;
       border-top: 1px dashed rgba(29, 53, 87, 0.20);
     }
-
     .callout {
       margin-top: 18px;
       background: var(--panel);
@@ -284,19 +241,16 @@
       border-radius: 16px;
       padding: 16px;
     }
-
     .callout h3 {
       margin: 0 0 8px;
       font-size: 17px;
     }
-
     .foot {
       margin-top: 18px;
       color: var(--sub);
       font-size: 13px;
       line-height: 1.5;
     }
-
     @media (max-width: 900px) {
       .grid { grid-template-columns: 1fr; }
       .side { position: static; }
@@ -330,7 +284,7 @@
         <div class="callout">
           <h3>Helpful reminders</h3>
           <div class="muted">
-            <strong>Provoked</strong> usually means there was a clear reason the animal bit: handling, feeding, cornering, caging, crowding space, getting hit by a car, or a jogger running past a yard.<br><br>
+            <strong>Provoked</strong> usually means there was a clear reason for the bite: handling, feeding, cornering, caging, crowding space, or similar.<br><br>
             <strong>Quarantine</strong> here means a 10-day observation period for a dog, cat, or ferret after a human bite.
           </div>
         </div>
@@ -343,136 +297,67 @@
   </div>
 
   <script>
+  window.addEventListener('DOMContentLoaded', () => {
     const resultNodes = {
       result_pep: {
-        type: 'result',
-        severity: 'bad',
-        tag: 'Recommended action',
-        title: 'Recommend PEP',
+        type: 'result', severity: 'bad', tag: 'Recommended action', title: 'Recommend PEP',
         summary: 'Based on the answers entered, this exposure should be managed as needing rabies post-exposure prophylaxis.',
-        why: 'This path reaches a situation where the animal is not available for timely testing or the exposure is treated as credible enough that prophylaxis should not wait.',
-        nextSteps: [
-          'Review wound care, tetanus, and bacterial infection considerations as clinically appropriate.',
-          'Document the exposure details and why testing or quarantine was not sufficient.',
-          'Consult local public health if there are unusual details or uncertainty.'
-        ]
+        why: 'This path reaches a situation where the animal is not available for timely testing or the exposure is credible enough that prophylaxis should not wait.',
+        nextSteps: ['Review wound care, tetanus, and bacterial infection considerations as clinically appropriate.', 'Document the exposure details and why testing or quarantine was not sufficient.', 'Consult local public health if there are unusual details or uncertainty.']
       },
       result_test: {
-        type: 'result',
-        severity: 'bad',
-        tag: 'Recommended action',
-        title: 'Test the animal for rabies',
+        type: 'result', severity: 'bad', tag: 'Recommended action', title: 'Test the animal for rabies',
         summary: 'The pathway points to rabies testing of the animal rather than immediate closure of the event.',
         why: 'This usually reflects an animal that is available and should be tested to guide the next decision.',
-        nextSteps: [
-          'Coordinate testing through the appropriate state or local process.',
-          'Do not treat a pending test as equivalent to a negative result.',
-          'Escalate quickly if symptoms, delays, or chain-of-custody issues arise.'
-        ]
+        nextSteps: ['Coordinate testing through the appropriate state or local process.', 'Do not treat a pending test as equivalent to a negative result.', 'Escalate quickly if symptoms, delays, or chain-of-custody issues arise.']
       },
       result_quarantine: {
-        type: 'result',
-        severity: 'warn',
-        tag: 'Recommended action',
-        title: '10-day quarantine / observation',
+        type: 'result', severity: 'warn', tag: 'Recommended action', title: '10-day quarantine / observation',
         summary: 'The animal should be confined and observed for 10 days after the bite.',
         why: 'This is the usual path for an available dog, cat, or ferret after a human exposure when quarantine is feasible.',
-        nextSteps: [
-          'Follow local public health instructions for the quarantine conditions.',
-          'If neurologic illness develops during quarantine, escalate for euthanasia and testing promptly.',
-          'If the animal remains healthy through quarantine, the exposure can generally be closed.'
-        ]
+        nextSteps: ['Follow local public health or animal control instructions for the quarantine conditions.', 'If neurologic illness develops during quarantine, escalate for euthanasia and testing promptly.', 'If the animal remains healthy through quarantine, the exposure can generally be closed.']
       },
       result_no_pep: {
-        type: 'result',
-        severity: 'ok',
-        tag: 'Recommended action',
-        title: 'No PEP recommended',
+        type: 'result', severity: 'ok', tag: 'Recommended action', title: 'No PEP recommended',
         summary: 'This pathway does not support rabies PEP based on the answers entered.',
         why: 'The exposure pattern entered does not meet the algorithm threshold for prophylaxis.',
-        nextSteps: [
-          'Still assess wound care, tetanus, and bacterial infection needs.',
-          'Document the reasoning and any facts supporting no exposure or a provoked, low-risk event.',
-          'Reassess if new information emerges.'
-        ]
+        nextSteps: ['Still assess wound care, tetanus, and bacterial infection needs.', 'Document the reasoning and any facts supporting no exposure or a provoked, low-risk event.', 'Reassess if new information emerges.']
       },
       result_no_test_no_pep: {
-        type: 'result',
-        severity: 'ok',
-        tag: 'Recommended action',
-        title: 'No testing and no PEP',
+        type: 'result', severity: 'ok', tag: 'Recommended action', title: 'No testing and no PEP',
         summary: 'The algorithm points away from both rabies testing at public expense and PEP.',
         why: 'This generally reflects a low-risk event such as no credible contact or a clearly provoked bite in a lower-risk context.',
-        nextSteps: [
-          'Document why the event does not meet testing or PEP criteria.',
-          'Consider routine wound management issues separately from rabies.',
-          'Reopen the decision only if the history changes.'
-        ]
+        nextSteps: ['Document why the event does not meet testing or PEP criteria.', 'Consider routine wound management issues separately from rabies.', 'Reopen the decision only if the history changes.']
       },
       result_discuss_epi: {
-        type: 'result',
-        severity: 'warn',
-        tag: 'Recommended action',
-        title: 'Discuss with public health / epi',
+        type: 'result', severity: 'warn', tag: 'Recommended action', title: 'Discuss with public health / epi',
         summary: 'This path needs case-by-case review rather than an automatic answer.',
         why: 'The algorithm flags the scenario as complex or unusual enough that consultation is appropriate.',
-        nextSteps: [
-          'Contact the appropriate local or state public health resource.',
-          'Have the bite history, animal status, and timeline ready before you call.',
-          'Avoid finalizing the plan until the unusual details are reviewed.'
-        ]
+        nextSteps: ['Contact the appropriate local or state public health resource.', 'Have the bite history, animal status, and timeline ready before you call.', 'Avoid finalizing the plan until the unusual details are reviewed.']
       },
       result_45_day_quarantine_vax: {
-        type: 'result',
-        severity: 'warn',
-        tag: 'Recommended action',
-        title: '45-day quarantine and rabies vaccine',
+        type: 'result', severity: 'warn', tag: 'Recommended action', title: '45-day quarantine and rabies vaccine',
         summary: 'For an exposed dog, cat, or ferret, the pathway reaches quarantine plus vaccination.',
         why: 'This reflects an animal exposure scenario where the source tested positive or the animal is not currently protected enough to dismiss risk.',
-        nextSteps: [
-          'Confirm quarantine requirements with the appropriate animal/public health authority.',
-          'Arrange vaccination if indicated.',
-          'Document vaccine status clearly, including whether proof was available.'
-        ]
+        nextSteps: ['Confirm quarantine requirements with the appropriate animal/public health authority.', 'Arrange vaccination if indicated.', 'Document vaccine status clearly, including whether proof was available.']
       },
       result_no_quarantine: {
-        type: 'result',
-        severity: 'ok',
-        tag: 'Recommended action',
-        title: 'No quarantine needed',
+        type: 'result', severity: 'ok', tag: 'Recommended action', title: 'No quarantine needed',
         summary: 'The entered path does not lead to quarantine for the exposed animal.',
         why: 'This generally reflects a negative source test or an exposure that does not meet quarantine criteria.',
-        nextSteps: [
-          'Document the test result or facts that support closure.',
-          'Advise the owner to report any change in status if relevant.',
-          'Retain vaccine documentation when it is part of the rationale.'
-        ]
+        nextSteps: ['Document the test result or facts that support closure.', 'Advise the owner to report any change in status if relevant.', 'Retain vaccine documentation when it is part of the rationale.']
       },
       result_euthanasia: {
-        type: 'result',
-        severity: 'bad',
-        tag: 'Recommended action',
-        title: 'Euthanasia pathway',
+        type: 'result', severity: 'bad', tag: 'Recommended action', title: 'Euthanasia pathway',
         summary: 'The algorithm reaches euthanasia for this animal exposure scenario.',
         why: 'This usually reflects higher-risk animal-to-animal exposure in a context where the source tested positive or the exposed animal is wildlife.',
-        nextSteps: [
-          'Confirm the recommendation with the appropriate animal/public health authority before acting.',
-          'Document species, exposure type, and test result or risk basis.',
-          'Handle owner communication carefully and clearly.'
-        ]
+        nextSteps: ['Confirm the recommendation with the appropriate animal/public health authority before acting.', 'Document species, exposure type, and test result or risk basis.', 'Handle owner communication carefully and clearly.']
       },
       result_long_quarantine: {
-        type: 'result',
-        severity: 'warn',
-        tag: 'Recommended action',
-        title: 'Long quarantine for livestock',
+        type: 'result', severity: 'warn', tag: 'Recommended action', title: 'Long quarantine for livestock',
         summary: 'This livestock path leads to an extended quarantine period rather than immediate release.',
         why: 'The source risk could not be dismissed and the algorithm supports a longer observation period for livestock.',
-        nextSteps: [
-          'Confirm the exact quarantine duration with the relevant authority.',
-          'Document whether the source animal was unavailable or positive.',
-          'Communicate practical restrictions clearly to the owner.'
-        ]
+        nextSteps: ['Confirm the exact quarantine duration with the relevant authority.', 'Document whether the source animal was unavailable or positive.', 'Communicate practical restrictions clearly to the owner.']
       }
     };
 
@@ -584,7 +469,7 @@
       cat_quarantine: {
         type: 'question',
         question: 'Can the cat be quarantined for 10 days?',
-        help: 'Local public health determines what acceptable quarantine looks like.',
+        help: 'Local public health or animal control determines what acceptable quarantine looks like.',
         answers: [
           { label: 'Yes', desc: 'Quarantine is feasible', next: 'result_quarantine' },
           { label: 'No', desc: 'Quarantine is not feasible', next: 'result_test' }
@@ -611,7 +496,7 @@
       dog_ferret_quarantine: {
         type: 'question',
         question: 'Can the animal be quarantined for 10 days?',
-        help: 'Use the local public health standard for quarantine conditions.',
+        help: 'Use the local standard for quarantine conditions.',
         answers: [
           { label: 'Yes', desc: 'Quarantine is feasible', next: 'result_quarantine' },
           { label: 'No', desc: 'Quarantine is not feasible', next: 'result_discuss_epi' }
@@ -755,6 +640,11 @@
     const historyEl = document.getElementById('history');
     const historyEmptyEl = document.getElementById('historyEmpty');
 
+    if (!appEl || !historyEl || !historyEmptyEl) {
+      console.error('Required app elements were not found.');
+      return;
+    }
+
     function getNode(id) {
       return nodes[id] || resultNodes[id];
     }
@@ -766,16 +656,12 @@
         appEl.innerHTML = '<p>Something went wrong. Node not found.</p>';
         return;
       }
-
-      if (node.type === 'question') {
-        renderQuestion(node);
-      } else {
-        renderResult(node);
-      }
+      if (node.type === 'question') renderQuestion(node);
+      else renderResult(node);
     }
 
     function renderQuestion(node) {
-      const progressText = history.length === 0 ? 'Starting decision path' : `Step ${history.length + 1}`;
+      const progressText = history.length === 0 ? 'Starting decision path' : 'Step ' + (history.length + 1);
       appEl.innerHTML = `
         <div class="progress">${escapeHtml(progressText)}</div>
         <h2 class="question">${escapeHtml(node.question)}</h2>
@@ -842,6 +728,7 @@
           ${county.notes.length ? `<p><strong>Notes:</strong></p><ul>${county.notes.map(n => `<li>${escapeHtml(n)}</li>`).join('')}</ul>` : ''}
         </div>
         <div class="foot">
+          This summary contains no protected health information (PHI) and is intended for decision support only.<br>
           This prototype reflects the uploaded branching logic and should be validated against the current operational workflow before field use.
         </div>
       `;
@@ -850,9 +737,7 @@
         showWhy = !showWhy;
         render();
       });
-      document.getElementById('printBtn').addEventListener('click', () => {
-        printReport(node, county);
-      });
+      document.getElementById('printBtn').addEventListener('click', () => printReport(node, county));
       document.getElementById('restartBtn').addEventListener('click', restart);
       const backBtn = document.getElementById('backBtn');
       if (backBtn) backBtn.addEventListener('click', goBack);
@@ -890,6 +775,7 @@
       const prev = history.pop();
       if (!prev) return;
       currentNodeId = prev.nodeId;
+      if (currentNodeId === 'context_start') operationalContext = null;
       showWhy = false;
       render();
     }
@@ -905,9 +791,7 @@
       printWindow.document.write(reportHtml);
       printWindow.document.close();
       printWindow.focus();
-      setTimeout(() => {
-        printWindow.print();
-      }, 250);
+      setTimeout(() => printWindow.print(), 250);
     }
 
     function generateReportHtml(resultNode, county) {
@@ -919,28 +803,21 @@
       };
 
       const summaryRows = [];
-      let exposureType = '';
-      let animalType = '';
       let ownership = '';
       let availability = '';
       let provocation = '';
 
       history.forEach(item => {
         if (item.question === 'Who was exposed?') summaryRows.push(['Who was exposed', item.answer]);
-        if (item.question === 'What type of animal was involved?' || item.question === 'What type of animal was exposed?') {
-          animalType = item.answer;
-          summaryRows.push(['Animal type', item.answer]);
-        }
-        if (item.question.includes('owned')) ownership = item.answer;
-        if (item.question.includes('available')) availability = item.answer;
+        if (item.question === 'What type of animal was involved?' || item.question === 'What type of animal was exposed?') summaryRows.push(['Animal type', item.answer]);
+        if (item.question.toLowerCase().includes('owned')) ownership = item.answer;
+        if (item.question.toLowerCase().includes('available')) availability = item.answer;
         if (item.question.toLowerCase().includes('provoked') || item.question.toLowerCase().includes('unprovoked')) provocation = item.answer;
-        if (item.question.toLowerCase().includes('contact') || item.question.toLowerCase().includes('bite') || item.question.toLowerCase().includes('scratch')) exposureType = item.answer;
       });
 
       if (ownership) summaryRows.push(['Owned / evidence of ownership', ownership]);
       if (availability) summaryRows.push(['Animal available', availability]);
       if (provocation) summaryRows.push(['Provoked / unprovoked', provocation]);
-      if (exposureType) summaryRows.push(['Exposure detail', exposureType]);
       summaryRows.push(['Operational setting', contextLabels[operationalContext] || 'Not specified']);
 
       const pathRows = history.map(item => `
@@ -950,20 +827,15 @@
         </tr>
       `).join('');
 
-      const summaryTable = summaryRows.map(([k,v]) => `
+      const summaryTable = summaryRows.map(([k, v]) => `
         <tr>
           <td class="q">${escapeHtml(k)}</td>
           <td>${escapeHtml(v)}</td>
         </tr>
       `).join('');
 
-      const notesHtml = county.notes.length
-        ? `<ul>${county.notes.map(n => `<li>${escapeHtml(n)}</li>`).join('')}</ul>`
-        : '<p>None.</p>';
-
-      const detailHtml = resultNode.nextSteps?.length
-        ? `<ul>${resultNode.nextSteps.map(step => `<li>${escapeHtml(step)}</li>`).join('')}</ul>`
-        : '';
+      const notesHtml = county.notes.length ? `<ul>${county.notes.map(n => `<li>${escapeHtml(n)}</li>`).join('')}</ul>` : '<p>None.</p>';
+      const detailHtml = resultNode.nextSteps && resultNode.nextSteps.length ? `<ul>${resultNode.nextSteps.map(step => `<li>${escapeHtml(step)}</li>`).join('')}</ul>` : '';
 
       return `<!DOCTYPE html>
 <html lang="en">
@@ -992,9 +864,7 @@
   <div class="sub">Generated from the Rabies Exposure Decision Assistant (PHI-free summary)</div>
 
   <h2>Exposure summary</h2>
-  <table>
-    ${summaryTable}
-  </table>
+  <table>${summaryTable}</table>
 
   <h2>Rabies decision</h2>
   <div class="box">
@@ -1014,13 +884,11 @@
   </div>
 
   <h2>Decision path</h2>
-  <table>
-    ${pathRows}
-  </table>
+  <table>${pathRows}</table>
 
   <div class="footer">
     This summary contains no protected health information (PHI) and is intended for decision support only.<br>
-    This printout is a decision-support summary and should be reviewed against current Jackson County and Oregon operational guidance before final use.
+    This printout should be reviewed against current Jackson County and Oregon operational guidance before final use.
   </div>
 </body>
 </html>`;
@@ -1042,29 +910,23 @@
       const isVet = context === 'veterinary';
       const isFarm = context === 'farm';
 
-      // 🏥 Veterinary clinic exception
       if (isVet) {
         return {
           animalControl: 'No',
           publicHealth: requiresPH ? 'Yes' : 'Not usually',
-          why: requiresPH
-            ? 'Testing or PEP triggers a Public Health case (Orpheus). Animal Control is not used for veterinary exposures.'
-            : 'Veterinary clinics manage the animal directly. Animal Control is not part of this workflow.',
+          why: requiresPH ? 'Rabies testing or PEP requires a Public Health case (Orpheus). Animal Control is not used for veterinary exposures.' : 'Veterinary clinics manage the animal directly. Animal Control is not part of this workflow.',
           notes: [
-            '⚠️ Jackson County exception: Veterinary practices handle animal management.',
+            'Jackson County exception: Veterinary practices handle animal management.',
             requiresPH ? 'Public Health must be involved because this triggers an Orpheus case.' : 'Only involve Public Health if the situation escalates to testing, PEP, or consultation.'
           ]
         };
       }
 
-      // 🐾 Animal-to-animal (no human exposure)
       if (animalOnly) {
         return {
           animalControl: isFarm ? 'Yes, if county support is needed' : 'Usually no (start with veterinarian)',
           publicHealth: requiresPH ? 'Yes' : 'No',
-          why: requiresPH
-            ? 'This still triggers Public Health because testing, PEP logic, or consultation is involved.'
-            : 'No human exposure → Public Health not typically involved.',
+          why: requiresPH ? 'This still triggers Public Health because testing, PEP logic, or consultation is involved.' : 'No human exposure means Public Health is not typically involved.',
           notes: [
             isFarm ? 'Start with a veterinarian for livestock management.' : 'Primary contact is a veterinarian.',
             'Use Animal Control only if an animal must be located, handled, or controlled.'
@@ -1072,25 +934,21 @@
         };
       }
 
-      // 🐶 Routine quarantine case
       if (quarantineOnly) {
         return {
           animalControl: 'Yes',
           publicHealth: 'No',
-          why: 'Routine owned pet bite. 10-day quarantine is managed by Animal Control.',
+          why: 'Routine owned pet bite. Ten-day quarantine is managed by Animal Control.',
           notes: [
             'Public Health is not involved unless the situation changes.',
-            'Escalate if the animal becomes ill, unavailable, or testing/PEP becomes necessary.'
+            'Escalate if the animal becomes ill, unavailable, or testing or PEP becomes necessary.'
           ]
         };
       }
 
-      // 🔴 PEP / Testing / Consult = PH REQUIRED
       if (requiresPH) {
         return {
-          animalControl: resultId === 'result_pep'
-            ? 'Yes, if animal still needs to be located or handled'
-            : 'Yes',
+          animalControl: resultId === 'result_pep' ? 'Yes, if animal still needs to be located or handled' : 'Yes',
           publicHealth: 'Yes',
           why: 'Rabies testing or PEP requires a Public Health case (Orpheus).',
           notes: [
@@ -1100,63 +958,13 @@
         };
       }
 
-      // 🟢 Everything else
       return {
         animalControl: 'Only if animal handling is needed',
         publicHealth: 'No',
-        why: 'No human exposure and no PEP/testing → no Public Health involvement.',
+        why: 'No human exposure and no PEP or testing means no Public Health involvement.',
         notes: [
           'Reassess if new information changes risk level.',
           'Escalate to Public Health if testing or PEP becomes necessary.'
-        ]
-      };
-    }
-
-      if (animalExposureOnly) {
-        return {
-          animalControl: isFarm ? 'Maybe, depending on the animal and situation' : 'Maybe / veterinarian first in many cases',
-          publicHealth: requiresPH ? 'Yes' : 'Not usually',
-          why: requiresPH
-            ? 'Public Health is not usually involved when there is no human exposure, but this result still triggers public health work because testing, PEP logic, or consultation is involved.'
-            : 'Public Health is not usually involved when there is no human exposure.',
-          notes: [
-            isFarm ? 'For livestock situations, veterinarian involvement is often the first operational step.' : 'For animal-to-animal exposure, veterinary management is often the main workflow.',
-            'Use Animal Control if an animal needs locating, handling, quarantine support, or other county action.'
-          ]
-        };
-      }
-
-      if (quarantineOnly) {
-        return {
-          animalControl: 'Yes',
-          publicHealth: 'Not usually',
-          why: 'For a routine owned pet bite to a human, Animal Control usually manages the 10-day quarantine. Public Health is not usually involved unless the situation escalates beyond routine quarantine.',
-          notes: [
-            'Escalate to Public Health if the animal becomes ill, cannot complete quarantine, or the case shifts toward testing or PEP.',
-            'Document ownership, availability, and quarantine status clearly.'
-          ]
-        };
-      }
-
-      if (requiresPH) {
-        return {
-          animalControl: resultId === 'result_pep' ? 'Maybe, depending on whether animal handling or locating is still needed' : 'Yes, if an animal must be located, tested, handled, or shipped',
-          publicHealth: 'Yes',
-          why: 'In Jackson County, Public Health is required when there is a PEP recommendation, when an animal needs rabies testing, or when the case requires direct public health consultation. These situations require Public Health case work, including Orpheus reporting when applicable.',
-          notes: [
-            'If a bat or other animal is being tested in a community setting, Animal Control is often part of the specimen-handling workflow.',
-            'For owned pet bites that stay in routine 10-day quarantine only, Public Health is not usually involved.'
-          ]
-        };
-      }
-
-      return {
-        animalControl: 'Maybe, depending on whether any animal-side action is still needed',
-        publicHealth: 'Not usually',
-        why: 'This result does not usually trigger Public Health involvement under the Jackson County workflow.',
-        notes: [
-          'Public Health becomes involved if the scenario shifts to testing, PEP, or direct consultation needs.',
-          'Animal Control involvement depends on whether an animal needs quarantine, capture, or handling.'
         ]
       };
     }
@@ -1171,6 +979,7 @@
     }
 
     render();
+  });
   </script>
 </body>
 </html>
