@@ -329,19 +329,20 @@
         why: 'This generally reflects a low-risk event such as no credible contact or a clearly provoked bite in a lower-risk context.',
         nextSteps: ['Document why the event does not meet testing or PEP criteria.', 'Consider routine wound management issues separately from rabies.', 'Reopen the decision only if the history changes.']
       },
-    result_no_routine_testing: {
-  type: 'result',
-  severity: 'ok',
-  tag: 'Recommended action',
-  title: 'No routine rabies testing indicated',
-  summary: 'This exposure does not usually require rabies testing under the veterinary-handling exception.',
-  why: 'The bite occurred in a veterinary setting during routine handling or restraint, and the situation does not automatically require rabies testing just because standard quarantine is not being used.',
-  nextSteps: [
-    'Document the exposure and the circumstances of handling or restraint.',
-    'Assess wound care, tetanus, and bacterial infection needs as appropriate.',
-    'Escalate only if new facts raise concern for rabies risk.'
-  ]
-},  result_discuss_epi: {
+          result_no_routine_testing: {
+        type: 'result',
+        severity: 'ok',
+        tag: 'Recommended action',
+        title: 'No routine rabies testing indicated',
+        summary: 'This exposure does not usually require rabies testing under the veterinary-handling exception.',
+        why: 'The bite occurred in a veterinary setting during routine handling or restraint, and the situation does not automatically require rabies testing just because standard quarantine is not being used.',
+        nextSteps: [
+          'Document the exposure and the circumstances of handling or restraint.',
+          'Assess wound care, tetanus, and bacterial infection needs as appropriate.',
+          'Escalate only if new facts raise concern for rabies risk.'
+        ]
+      },
+      result_discuss_epi: {
         type: 'result', severity: 'warn', tag: 'Recommended action', title: 'Discuss with public health / epi',
         summary: 'This path needs case-by-case review rather than an automatic answer.',
         why: 'The algorithm flags the scenario as complex or unusual enough that consultation is appropriate.',
