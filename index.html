@@ -476,14 +476,14 @@ bat_sleeping_exposure: {
         ]
       },
       cat_quarantine: {
-        type: 'question',
-        question: 'Can the cat be quarantined for 10 days?',
-        help: 'Animal control determines what acceptable quarantine looks like.',
-        answers: [
-          { label: 'Yes', desc: 'Quarantine is feasible', next: 'result_quarantine' },
-          { label: 'No', desc: 'Quarantine is not feasible', next: 'result_test' }
-        ]
-      },
+  type: 'question',
+  question: 'Can the cat be quarantined for 10 days?',
+  help: 'Animal Control determines what acceptable quarantine looks like. In a veterinary setting, routine handling bites usually do not require testing just because standard quarantine is not being used.',
+  answers: [
+    { label: 'Yes', desc: 'Quarantine is feasible', next: 'result_quarantine' },
+    { label: 'No', desc: 'Quarantine is not feasible', next: 'cat_vet_exception' }
+  ]
+},
       cat_vet_exception: {
   type: 'question',
   question: 'Did this occur in a veterinary setting during routine handling or restraint?',
