@@ -496,14 +496,15 @@ bat_sleeping_exposure: {
     { label: 'No', desc: 'Quarantine is not feasible', next: 'cat_vet_exception' }
   ]
 },
-      cat_vet_exception: {
+cat_vet_exception: {
   type: 'question',
   question: 'Did this occur in a veterinary setting during routine handling or restraint?',
   help: 'Examples: exam, restraint, treatment, nail trim, vaccination, or other routine veterinary handling.',
   answers: [
-    { label: 'Yes', desc: 'Routine provoked veterinary exposure', next: 'result_no_pep' },
+    { label: 'Yes', desc: 'Routine provoked veterinary exposure', next: 'result_no_routine_testing' },
     { label: 'No', desc: 'Not a routine veterinary handling bite', next: 'result_test' }
   ]
+},
 },
       cat_unprovoked: {
         type: 'question',
