@@ -284,7 +284,7 @@
         <div class="callout">
           <h3>Helpful reminders</h3>
           <div class="muted">
-            <strong>Provoked</strong> usually means there was a clear reason for the bite: handling, feeding, cornering, caging, crowding space, or similar.<br><br>
+            <strong>Provoked</strong> usually means there was a clear reason for the bite: handling, feeding, cornering, caging, crowding space, or similar. Think normal animal behavior, not necessarily good animal behavior.<br><br>
             <strong>Quarantine</strong> here means a 10-day observation period for a dog, cat, or ferret after a human bite.
           </div>
         </div>
@@ -364,8 +364,7 @@
     const nodes = {
       context_start: {
         type: 'question',
-        question: 'Where did this happen?',
-        help: 'This changes the Jackson County workflow shown at the end, even when the rabies recommendation stays the same.',
+        question: 'Where did the potential exposure occur?',
         answers: [
           { label: 'Community / home / street', desc: 'Typical community setting', next: 'start', setContext: 'community' },
           { label: 'Veterinary clinic / animal hospital', desc: 'Veterinary practice setting', next: 'start', setContext: 'veterinary' },
@@ -442,7 +441,7 @@
       cat_provoked: {
         type: 'question',
         question: 'Was the bite clearly provoked?',
-        help: 'Provoked usually means there was a clear reason for the bite, like handling, cornering, feeding, or crowding the animal.',
+        help: 'Provoked usually means there was a clear reason for the bite, like handling, cornering, feeding, or crowding the animal. Normal animal behavior, not necessarily good animal behavior',
         answers: [
           { label: 'Yes', desc: 'Clear reason for the bite', next: 'result_no_test_no_pep' },
           { label: 'No', desc: 'No clear provocation', next: 'cat_available' }
@@ -469,7 +468,7 @@
       cat_quarantine: {
         type: 'question',
         question: 'Can the cat be quarantined for 10 days?',
-        help: 'Local public health or animal control determines what acceptable quarantine looks like.',
+        help: 'Animal control determines what acceptable quarantine looks like.',
         answers: [
           { label: 'Yes', desc: 'Quarantine is feasible', next: 'result_quarantine' },
           { label: 'No', desc: 'Quarantine is not feasible', next: 'result_test' }
@@ -496,7 +495,7 @@
       dog_ferret_quarantine: {
         type: 'question',
         question: 'Can the animal be quarantined for 10 days?',
-        help: 'Use the local standard for quarantine conditions.',
+        help: 'Animal Control determines quarantine conditions.',
         answers: [
           { label: 'Yes', desc: 'Quarantine is feasible', next: 'result_quarantine' },
           { label: 'No', desc: 'Quarantine is not feasible', next: 'result_discuss_epi' }
