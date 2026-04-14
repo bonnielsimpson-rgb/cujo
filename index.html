@@ -394,14 +394,24 @@
         ]
       },
       bat_contact_evidence: {
-        type: 'question',
-        question: 'Was there evidence suggesting possible physical contact?',
-        help: 'Examples might include a sleeping person, young child, or impaired person in a room with a bat.',
-        answers: [
-          { label: 'Yes', desc: 'Possible contact cannot be ruled out', next: 'bat_alive' },
-          { label: 'No', desc: 'No evidence suggesting contact', next: 'result_no_pep' }
-        ]
-      },
+  type: 'question',
+  question: 'Was there known or likely direct contact with a person (bite, scratch, or bat touching skin)?',
+  help: 'Only answer YES if there was actual or very likely physical contact.',
+  answers: [
+    { label: 'Yes', desc: 'Known or likely direct contact', next: 'bat_testing_available' },
+    { label: 'No', desc: 'No known direct contact', next: 'bat_sleeping_exposure' }
+  ]
+},
+
+bat_sleeping_exposure: {
+  type: 'question',
+  question: 'Was the bat in a room with a sleeping person, child, or someone who may not notice contact?',
+  help: 'Examples: bat in a bedroom overnight, person woke up with bat, young child in room. Do NOT include bats in other areas like bathrooms or garages.',
+  answers: [
+    { label: 'Yes', desc: 'Possible contact cannot be ruled out', next: 'bat_testing_available' },
+    { label: 'No', desc: 'No realistic chance of contact', next: 'result_no_pep' }
+  ]
+},
       bat_alive: {
         type: 'question',
         question: 'Was the bat alive at the time of the encounter?',
